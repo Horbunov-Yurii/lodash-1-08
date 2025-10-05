@@ -170,7 +170,7 @@ const createItem = (arr) => {
 // перерендерити список з відфільтрованими елементами.
 
 const inputEl = document.querySelector(".input-js")
-inputEl.addEventListener("input", onInputChange)
+inputEl.addEventListener("input", _.throttle(onInputChange, 1000, {"leading": false}))
 function onInputChange(event) {
   const filtr = event.target.value.toLowerCase().trim()
   const filtrCurs = courses.filter(({label}) => label.toLowerCase().startsWith(filtr))
