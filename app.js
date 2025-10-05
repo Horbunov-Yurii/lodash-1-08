@@ -169,7 +169,13 @@ const createItem = (arr) => {
 
 // перерендерити список з відфільтрованими елементами.
 
-
+const inputEl = document.querySelector(".input-js")
+inputEl.addEventListener("input", onInputChange)
+function onInputChange(event) {
+  const filtr = event.target.value.toLowerCase().trim()
+  const filtrCurs = courses.filter(({label}) => label.toLowerCase().startsWith(filtr))
+  createItem(filtrCurs)
+}
 
 // 4. Оптимізація
 
