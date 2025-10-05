@@ -147,6 +147,15 @@ const courses = [
 
 // Результат вставляється у список <ul class="list-js">.
 
+const listEl = document.querySelector('.list-js')
+
+const createItem = (arr) => {
+  listEl.innerHTML = arr.map(({label, imag})=> `<li class="item-js">
+        <h2 class="title-js">${label}</h2>
+        <img class="img-js" src="${imag}" alt="${label}">
+    </li>`).join('')
+  
+}
 
 
 // 3. Фільтрація
@@ -169,3 +178,4 @@ const courses = [
 // використати бібліотеку lodash та метод debounce або throttle для оптимізації роботи колбек-функції.
 
 
+createItem(courses)
