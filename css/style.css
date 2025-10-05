@@ -1,0 +1,49 @@
+.box{
+    outline: 1px solid red;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.label-js{
+    display: block;
+    margin-bottom: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+
+.input-js{
+    display: block;
+    width: 300px;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.list-js{
+  display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 30px;
+  
+}
+
+.item-js{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+.title-js{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
